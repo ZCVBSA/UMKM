@@ -1,0 +1,151 @@
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(80deg, #222222, #555555);
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.Logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* ===== Profil ===== */
+.profil {
+    background-color: #fffbf0;  /* warna background berbeda */
+    padding: 60px 10%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+.profil h2 {
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+.profil p {
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/* ===== SECTION ===== */
+section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+
+/* ===== PRODUK ===== */
+.produk {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.produk-judul {
+    text-align: center;
+    margin-bottom: 0px; /* jarak ke card */
+}
+
+/* ===== CARD ===== */
+.card {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+}
+
+
+/* ===== HOVER EFFECT ===== */
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+
+/* ===== HARGA ===== */
+.harga {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.harga-beli {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+/* ===== BUTTON BELI ===== */
+.btn-beli {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-beli:hover {
+    background-color: #cf711f;
+    transform: scale(1.05);
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #cf711f;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
